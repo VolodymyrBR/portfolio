@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230117222648">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230125205527">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +23,8 @@
 				<div class="main__container">
 					<div class="main__logo-line">
 						<a href="#" class="main__logo"><picture><source srcset="img/main/logo.webp" type="image/webp"><img src="img/main/logo.png" alt="logo"></picture></a>
-						<a href="+821075269192" class="main__tel">+ 82 (10) 7526-9192</a>
-						<a href="+821075269192" class="main__tel-link"></a>
+						<button type="button" class="main__tel">+ 82 (10) 7526-9192</button>
+						<button data-popup="#tel" type="button" class="main__tel-icon"></button>
 					</div>
 					<div class="main__content content">
 						<div class="content__hi">Ласкаво просимо до онлайн школи</div>
@@ -41,7 +41,8 @@
 									грошей, якщо тебе не влаштують наші курси</p>
 							</div>
 						</div>
-						<button type="submit" class="content__button button button--blue">Записатися на ознайомлювальний
+						<button data-popup="#form" type="submit" class="content__button button button--blue">Записатися на
+							ознайомлювальний
 							вебінар</button>
 						<div class="main__whatsapp">
 							<a href="#" class="main__icon-app _icon-phone2"><span></span></a>
@@ -84,15 +85,175 @@
 					<a href="#" class="main__icon _icon-headphone"><span></span></a>
 					<div class="main__signature">Безкоштовна консультація</div>
 				</div>
-
 			</section>
+			<section class="page__seven seven">
+				<div class="seven__container">
+					<h2 class="seven__title title"><span>7 причин</span> чому саме ми?</h2>
+					<div class="seven__content">
+						<div class="seven__row">
+							<div class="seven__card card-seven border-card">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/01.webp" type="image/webp"><img src="img/seven/01.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Ти станеш затребуваним фахівцем у галузі штучного інтелекту
+								</div>
+							</div>
+							<div class="seven__card card-seven border-card">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/02.webp" type="image/webp"><img src="img/seven/02.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Створюватимеш свої моделі штучного інтелекту мовою
+									програмування
+									Python</div>
+							</div>
+							<div class="seven__card card-seven border-card">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/03.webp" type="image/webp"><img src="img/seven/03.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Зумієш створювати програми, пов'язані
+									з комп'ютерним зором та нейронними мережами.</div>
+							</div>
+							<div class="seven__card card-seven border-card">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/04.webp" type="image/webp"><img src="img/seven/04.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Ми навчаємо тільки тому, що тобі стане в нагоді
+									під час роботи!</div>
+							</div>
+						</div>
+						<div class="seven__row">
+							<div class="seven__card card-seven border-card">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/05.webp" type="image/webp"><img src="img/seven/05.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Ти знайдеш однодумців,
+									з якими зможеш створювати свої проекти</div>
+							</div>
+							<div class="seven__card card-seven border-card ">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/06.webp" type="image/webp"><img src="img/seven/06.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Ми створюємо співтовариство професіоналів, таких як і ми, які
+									прагнуть розвивати та змінювати цей світ на краще за допомогою IT технологій</div>
+							</div>
+							<div class="seven__card card-seven border-card">
+								<span></span>
+								<div class="card-seven__icon">
+									<picture><source srcset="img/seven/07.webp" type="image/webp"><img src="img/seven/07.png" alt="icon"></picture>
+								</div>
+								<div class="card-seven__text">Після успішного завершення курсу ми допоможемо тобі
+									працевлаштуватися
+									у Південнокорейські IT компанії!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__cool cool">
+				<div class="cool__container">
+					<h2 class="cool__title title">
+						<p><span>Штучний<span></p>
+						<p><span>інтелект</span> – це круто? </p>
+					</h2>
+					<div class="cool__content">
+						<div class="cool__row">На даний момент лише у Південній Кореї шукають 10,000 фахівців у галузі AI!
+						</div>
+						<div class="cool__row">Молодші розробники штучного інтелекту без досвіду роботи можуть одержувати в
+							Південній Кореї 60,000,000 вон (51,000 $) на рік. Фахівець із середнім стажем роботи може
+							отримувати
+							вже близько 100,000,000 вон (85,000 $) на рік.</div>
+						<div class="cool__row">У США рівень зарплат ще вищий! Молодший спеціаліст без досвіду роботи отримує в
+							середньому 93,000 $ на рік. А інженер із середнім стажем роботи отримує вже більше 140,000 $ на
+							рік!
+						</div>
+						<div class="cool__row">А найсмачніше те, що твоя зарплата зростатиме разом
+							з твоїми навичками. Стаж не такий важливий.</div>
+					</div>
+					<button data-popup="#form" type="submit" class="cool__button button button--blue">Записатися на
+						ознайомлювальний
+						вебінар</button>
+					<div class="cool__decor decor-cool">
+						<div class="decor-cool__image">
+							<picture><source srcset="img" type="image/webp"><img src="img" alt=""></picture>
+						</div>
+						<div class="decor-cool__ellipse13"></div>
+						<div class="decor-cool__ellipse14"></div>
+						<div class="decor-cool__ellipse23"></div>
+						<div class="decor-cool__ellipse24"></div>
+						<div class="decor-cool__ellipse25"></div>
+						<div class="decor-cool__ellipse26"></div>
+						<div class="decor-cool__ellipse27"></div>
+						<div class="decor-cool__ellipse28"></div>
+						<div class="decor-cool__ellipse29"></div>
+						<div class="decor-cool__ellipse30"></div>
+						<div class="decor-cool__ellipse31"></div>
+						<div class="decor-cool__ellipse34"></div>
+						<div class="decor-cool__ellipse35"></div>
+						<div class="decor-cool__ellipse36"></div>
+					</div>
+				</div>
+			</section>
+			<div id="tel" aria-hidden="true" class="popup tel-popup">
+				<div class="popup__wrapper tel-wrapper">
+					<div class="popup__content tel-content">
+						<div class="popup__text">
+							<button data-close type="button" class="popup__close tel-close"></button>
+							<button type="button" class="popup__tel">+ 82 (10) 7526-9192</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="form" aria-hidden="true" class="popup form-popup">
+				<div class="popup__wrapper form-wrapper">
+					<div class="popup__content form-content">
+						<button data-close type="button" class="popup__close form-close"></button>
+						<form class="form">
+							<div class="form__title"><span>Записатися</span> на ознайомлювальний вебінар</div>
+							<div class="form__line ">
+								<label for="name" class="form__label">Ваше ПІБ:</label>
+								<div class="form__wrap border">
+									<input type="text" name="name" id="name" class="form__input input" placeholder="Іванов Іван Іванович
+						" autocomplete="off" data-required data-error="Невірно заповнене поле">
+								</div>
+							</div>
+							<div class="form__line">
+								<label for="tel" class="form__label">Номер телефону:</label>
+								<div class="form__wrap border">
+									<input type="tel" name="tel" id="tel" class="form__input input" autocomplete="off" placeholder="+82 (__) ____-____" data-required data-error="Невірно заповнене поле">
+								</div>
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Ваш e-mail:</label>
+								<div class="form__wrap border">
+									<input type="email" name="email" id="email" class="form__input input" autocomplete="off" placeholder="name@gmail.com" data-required="email" data-error="Невірно заповнене поле">
+								</div>
+							</div>
+							<div class="form__line">
+								<label for="date" class="form__label">Виберіть дату та час вебінару:</label>
+								<div class="form__wrap border">
+									<input type="datetime-local" name="date" id="date" class="form__input" data-required data-error="Невірно заповнене поле">
+								</div>
+							</div>
+							<button type="submit" class="form__button button button--blue">Записатися</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230117222648"></script>
+	<script src="js/app.min.js?_v=20230125205527"></script>
 </body>
 
 </html>
