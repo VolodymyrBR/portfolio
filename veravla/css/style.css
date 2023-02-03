@@ -1199,6 +1199,28 @@ body::after {
   display: block;
 }
 
+.spollers__block .block__more {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.spollers__row .block__content {
+  position: relative;
+  line-height: 1.31;
+}
+
+.spollers__row ._showmore-active .block__content {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65.62%, #FFFFFF), to(rgb(255, 255, 255)));
+  background: -o-linear-gradient(top, #FFFFFF 65.62%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, #FFFFFF 65.62%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -3346,17 +3368,6 @@ body::after {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-.spollers._text-active .spollers__text {
-  max-height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(65.62%, #FFFFFF), to(rgb(255, 255, 255)));
-  background: -o-linear-gradient(top, #FFFFFF 65.62%, rgb(255, 255, 255) 100%);
-  background: linear-gradient(180deg, #FFFFFF 65.62%, rgb(255, 255, 255) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 @media (min-width: 78.75em) {
   .form__title {
     font-size: 2.0625rem;
@@ -3388,6 +3399,10 @@ body::after {
 
   .form__input::placeholder {
     font-size: 1.25rem;
+  }
+
+  .spollers__row .block__content {
+    font-size: 1rem;
   }
 
   .title {
@@ -4004,18 +4019,6 @@ body::after {
     left: 0.9375rem;
   }
 
-  .spollers__text {
-    max-height: 6.8125rem;
-    overflow: hidden;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(65.62%, #FFFFFF), to(rgba(255, 255, 255, 0)));
-    background: -o-linear-gradient(top, #FFFFFF 65.62%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(180deg, #FFFFFF 65.62%, rgba(255, 255, 255, 0) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-
   .spollers__arrow {
     right: 0.625rem;
   }
@@ -4085,6 +4088,16 @@ body::after {
 }
 
 @media (max-width: 26.5625em) {
+  .spollers__row .block__content {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(65.62%, #FFFFFF), to(rgba(255, 255, 255, 0.3)));
+    background: -o-linear-gradient(top, #FFFFFF 65.62%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(180deg, #FFFFFF 65.62%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
   .seven__row {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
@@ -4122,6 +4135,10 @@ body::after {
 
   .form__input::placeholder {
     font-size: 0.9375rem;
+  }
+
+  .spollers__row .block__content {
+    font-size: 0.875rem;
   }
 
   .title {
@@ -4690,6 +4707,18 @@ body::after {
     }
     .form__input::placeholder {
       font-size: calc(0.9375rem + 0.3125 * (100vw - 22.5rem) / 56.25);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.825rem  +  0.2222222222vw , 1rem )) {
+    .spollers__row .block__content {
+      font-size: clamp( 0.875rem , 0.825rem  +  0.2222222222vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.825rem  +  0.2222222222vw , 1rem )) {
+    .spollers__row .block__content {
+      font-size: calc(0.875rem + 0.125 * (100vw - 22.5rem) / 56.25);
     }
 }
 

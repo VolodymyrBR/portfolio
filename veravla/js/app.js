@@ -1410,12 +1410,6 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
-        const spoller = document.querySelector(".spollers");
-        document.addEventListener("click", fullHeight);
-        function fullHeight(e) {
-            if (e.target.closest(".spollers__text")) spoller.classList.toggle("_text-active");
-            if (!e.target.closest(".spollers")) spoller.classList.remove("_text-active");
-        }
         window["FLS"] = true;
         isWebp();
         spollers();
