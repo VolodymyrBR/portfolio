@@ -6507,6 +6507,28 @@ body::after {
   background-clip: text;
   text-fill-color: transparent;
 }
+@media (min-width: 76.875em) {
+  .spollers .block__content-pl {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 22.5em) and (max-width: 76.875em) {
+  @supports (font-size: clamp( 0.875rem , 0.8232758621rem  +  0.2298850575vw , 1rem )) {
+    .spollers .block__content-pl {
+      font-size: clamp( 0.875rem , 0.8232758621rem  +  0.2298850575vw , 1rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.875rem , 0.8232758621rem  +  0.2298850575vw , 1rem )) {
+    .spollers .block__content-pl {
+      font-size: calc(0.875rem + 0.125 * (100vw - 22.5rem) / 54.375);
+    }
+  }
+}
+@media (max-width: 22.5em) {
+  .spollers .block__content-pl {
+    font-size: 0.875rem;
+  }
+}
 @media (max-width: 26.5625em) {
   .spollers .block__content-pl {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(65.96%, #FFFFFF), to(rgba(105, 104, 104, 0)));
