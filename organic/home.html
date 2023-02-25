@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230220213547">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230225165607">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,10 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Service</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Menu</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+							<li class="menu__item"><a href="#" data-goto=".item-page" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="#" data-goto=".best-page" class="menu__link">Service</a></li>
+							<li class="menu__item"><a href="#" data-goto=".explor-page" class="menu__link">Menu</a></li>
+							<li class="menu__item"><a href="#" data-goto class="menu__link">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -151,13 +151,180 @@
 				</div>
 				<div class="explor-page__decor"></div>
 			</section>
+			<section class="page__say say-page">
+				<div class="say-page__container">
+					<div class="say-page__item item-say">
+						<h2 class="item-say__title title">What Our Customers About Us saying</h2>
+						<!-- Оболонка слайдера -->
+						<div class="item-say__slider swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="item-say__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="item-say__slide slide-say swiper-slide">
+									<div class="slide-say__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+										industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took a galley of type and scrambled it to make a type specimen
+										book. It has survived not only five centuries, but also the leap into electronic
+										typesetting, remaining essentially unchanged. It was popularis</div>
+									<div class="slide-say__name">Ahmed Hridoy</div>
+									<div class="slide-say__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value"></div>
+									</div>
+								</div>
+								<div class="item-say__slide slide-say swiper-slide">
+									<div class="slide-say__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+										industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took a galley of type and scrambled it to make a type specimen
+										book. It has survived not only five centuries, but also the leap into electronic
+										typesetting, remaining essentially unchanged. It was popularis</div>
+									<div class="slide-say__name">Ahmed Hridoy</div>
+									<div class="slide-say__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value"></div>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="item-say__prev swiper-button-prev _icon-arrow"></button>
+							<button type="button" class="item-say__next swiper-button-next _icon-arrow"></button>
+						</div>
+					</div>
+					<div class="say-page__image image-say">
+						<div class="image-say__photo">
+							<picture><source srcset="img/say/01.webp" type="image/webp"><img src="img/say/01.png" alt="image"></picture>
+						</div>
+						<div class="image-say__rat">
+							<div class="image-say__star">
+								<img src="img/say/star.svg" alt="icon">
+								<img src="img/say/star.svg" alt="icon">
+								<img src="img/say/star.svg" alt="icon">
+								<img src="img/say/star.svg" alt="icon">
+								<img src="img/say/star1.svg" alt="icon">
+							</div>
+							<div class="image-say__icon">
+								<picture><source srcset="img/say/001.webp" type="image/webp"><img src="img/say/001.png" alt="icon"></picture>
+								<picture><source srcset="img/say/002.webp" type="image/webp"><img src="img/say/002.png" alt="icon"></picture>
+								<picture><source srcset="img/say/003.webp" type="image/webp"><img src="img/say/003.png" alt="icon"></picture>
+								<picture><source srcset="img/say/004.webp" type="image/webp"><img src="img/say/004.png" alt="icon"></picture>
+								<picture><source srcset="img/say/005.webp" type="image/webp"><img src="img/say/005.png" alt="icon"></picture>
+								<picture><source srcset="img/say/006.webp" type="image/webp"><img src="img/say/006.png" alt="icon"></picture>
+								<a href="#" class="image-say__plus"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__app app-page">
+				<div class="app-page__container">
+					<div class="app-page__image">
+						<picture><source srcset="img/app/01.webp" type="image/webp"><img src="img/app/01.png" alt="image"></picture>
+						<picture><source srcset="img/app/01.webp" type="image/webp"><img src="img/app/01.png" alt="image"></picture>
+					</div>
+					<div class="app-page__content content-app">
+						<div class="content-app__download">Download App</div>
+						<h2 class="content-app__title title">Simple Way To Order Your Organic Fruit </h2>
+						<div class="content-app__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+							unknown printer...</div>
+						<div class="content-app__button">
+							<a href="#" class="content-app__appstore">
+								<picture><source srcset="img/app/AppStore.webp" type="image/webp"><img src="img/app/AppStore.png" alt="image"></picture>
+							</a>
+							<a href="#" class="content-app__googleplay">
+								<picture><source srcset="img/app/GooglePlay.webp" type="image/webp"><img src="img/app/GooglePlay.png" alt="image"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div data-spollers="768, max" class="footer__container">
+
+				<div class="footer__column">
+					<a href="" class="footer__logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+						Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</div>
+				</div>
+
+				<div class="footer__column spollers">
+					<div class="spollers__item">
+						<button type="button" data-spoller class="spollers__title">Navigation</button>
+						<div class="spollers__body body">
+							<ul class="body__list">
+								<li class="body__link">
+									<a href="">About Us</a>
+								</li>
+								<li class="body__link">
+									<a href="">Service</a>
+								</li>
+								<li class="body__link">
+									<a href="">Menu</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__column spollers">
+					<div class="spollers__item">
+						<button type="button" data-spoller class="spollers__title">Resources</button>
+						<div class="spollers__body body">
+							<ul class="body__list">
+								<li class="body__link">
+									<a href="">Reviews</a>
+								</li>
+								<li class="body__link">
+									<a href="">Blog</a>
+								</li>
+								<li class="body__link">
+									<a href="">Update News</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="footer__column spollers">
+					<div class="spollers__item">
+						<button type="button" data-spoller class="spollers__title">Contact Us</button>
+						<div class="spollers__body body">
+							<div class="body__email">Email: oyasim@email.com</div>
+							<div class="body__social">
+								<a href="" class="_icon-facebook"></a>
+								<a href="" class="_icon-twitter"></a>
+								<a href="" class="_icon-instagram1"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230220213547"></script>
+	<script src="js/app.min.js?_v=20230225165607"></script>
 </body>
 
 </html>
