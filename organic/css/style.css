@@ -1416,19 +1416,22 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 38.780488%;
           flex: 1 0 38.780488%;
-  text-align: center;
-  /* 477/1230 */
 }
 
-.app-page__image img {
+.app-page__picture {
   position: relative;
   z-index: 1;
   width: 50.209205%;
   /* 240/478 */
   top: 0;
+  margin: 0 auto;
 }
 
-.app-page__image img:first-child {
+.app-page__picture img {
+  width: 100%;
+}
+
+.app-page__picture:first-child {
   position: absolute;
   width: 43.514644%;
   /* 208/478 */
@@ -2066,7 +2069,7 @@ h6 {
             flex-direction: column;
   }
 
-  .app-page__image {
+  .app-page {
     display: none;
   }
 
